@@ -1,0 +1,40 @@
+:root {
+    --cell-size: 48px;
+    --cell-borderwidth: 1px;
+    --grid-backgroud-color: #0077c7;
+}
+
+body {
+    font-family: "Roboto Medium", Ubuntu, Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    text-align: center;
+    color: #ffffff;
+    background-color: black;
+}
+
+.grille table {
+    border-spacing: 0;
+    background-color: var(--grid-backgroud-color);
+    margin-left: auto;
+    margin-right: auto;
+    min-height: calc(6 * var(--cell-size) + 12 * var(--cell-borderwidth));
+}
+
+.good_place {
+    background-color: green;
+}
+.wrong_place {
+    background-color: orange;
+}
+
+.grille td {
+    border: 1px solid #ffffff;
+}
+
+#logout {
+    display: block;
+    position: absolute;
+    right: 0px;
+    width: 10%;
+    height: 10%;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Motus Game</title>
+    <!-- Gestion des caractères accentuées -->
+    <meta charset="UTF-8">
+    <!-- Prend la largeur de l'appareil sur lequel on affiche le site -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Permet d'utiliser jquery pour ajax (les dollars)-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>    
+    <!-- Nos fonctions en js -->
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS.css" />
+  </head>
+  <body>
+    <div>
+
+      <!-- Logout button -->
+      <div>
+        <button id="logout" type="button" onclick="logout()">Déconnexion</button>
+      </div>
+
+      <!-- Text and links -->
+      <div>Bienvenue sur le site du motus.
+        <br>
+        Ci-dessous le lien pour aller à la page de score :
+        <br>
+        <!-- Score link container -->
+        <div id="score_link_container"></div>
+        <br>
+      </div>
+
+      <!-- Victory or defeat message container -->
+      <div id="message_container"></div>
+
+      <!-- Form container -->
+      <div id="input_form_container"></div>
+
+      <!-- game grid-->
+      <div id="grille" class="grille">
+        <table id="motus_table">
+        </table>
+      </div>
+
+    </div>
+  </body>
+</html>
